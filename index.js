@@ -7,6 +7,7 @@ const btnVideojet = document.getElementById('btn-videojet')
 const btnZanasi = document.getElementById('btn-zanasi')
 const btnConsumibles = document.getElementById('btn-consumibles')
 const btnRepuestos = document.getElementById('btn-repuestos')
+const btnVideo = document.getElementById('btn-video')
 
 const a0 = document.getElementById('a0')
 const a1 = document.getElementById('a1')
@@ -18,7 +19,6 @@ const a6 = document.getElementById('a6')
 const a7 = document.getElementById('a7')
 const a8 = document.getElementById('a8')
 
-const form = document.getElementById('form') 
 
 btnInicio.addEventListener('click', () => showMainArticle())
 btnNosotros.addEventListener('click', () => showNosotros())
@@ -29,6 +29,7 @@ btnVideojet.addEventListener('click', () => showVideojet())
 btnZanasi.addEventListener('click', () => showZanasi())
 btnConsumibles.addEventListener('click', () => showConsumibles())
 btnRepuestos.addEventListener('click', () => showRepuestos())
+btnVideo.addEventListener('click', () => showVideo())
 
 a0.addEventListener('click', () => showMainArticle())
 a1.addEventListener('click', () => showContacto())
@@ -45,10 +46,10 @@ a8.addEventListener('click', () => showContacto())
 form.addEventListener('submit', (e) => {
     e.preventDefault() 
     clearText()
-    showMsgOk()
+    okMessage()
 })
 
-form.addEventListener('click', () => hideMsgOk() )
+msgOk.addEventListener('click', () => hideOkMessage() )
 
 
 
